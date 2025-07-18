@@ -1018,12 +1018,11 @@
             emailBody += `Weitere tech. Specs: ${formData.get('technical-specs') || 'Nicht angegeben'}\n\n`;
             
             // 7. Zeitplan & Budget
-            emailBody += "07 | ZEITPLAN & BUDGET\n";
+            emailBody += "07 | ZEITPLAN\n";
             emailBody += "-".repeat(21) + "\n";
             emailBody += `Deadline: ${formData.get('deadline') || 'Nicht angegeben'}\n`;
             emailBody += `Priorität: ${formData.get('urgency') || 'Normal'}\n`;
-            emailBody += `Budget: ${formData.get('budget') || 'Nicht angegeben'}\n\n`;
-            
+                        
             // 8. Sonstiges
             emailBody += "08 | SONSTIGES\n";
             emailBody += "-".repeat(14) + "\n";
@@ -1037,7 +1036,7 @@
             
             emailBody += "---\n";
             emailBody += "Gesendet über das ANY EVER Sound Branding Briefing\n";
-            emailBody += "ENJOY.AUDIO\n";
+            emailBody += "enjoy.audio\n";
             
             // E-Mail öffnen
             const subject = encodeURIComponent(`Sound Branding Briefing | ${formData.get('company-name') || 'Neuer Kunde'}`);
